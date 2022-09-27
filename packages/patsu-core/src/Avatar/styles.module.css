@@ -1,0 +1,31 @@
+.avatar_root.md {
+  width: 30px;
+  height: 30px;
+}
+
+.avatar_root.sm {
+  width: 20px;
+  height: 20px;
+}
+
+.avatar_root.lg {
+  width: 40px;
+  height: 40px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.square {
+  border-radius: 0;
+}

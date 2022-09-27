@@ -1,0 +1,59 @@
+:root {
+  --input-main-color: rgb(13, 153, 255);
+}
+
+.input_wrapper {
+  position: relative;
+}
+
+.input {
+  outline: 0.5px solid lightgray;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 5px;
+  width: 100%;
+  background-color: rgba(255, 255, 255);
+  box-sizing: border-box;
+}
+
+.input_icon {
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.input_wrapper .input_icon + .input {
+  padding-left: 1.5rem;
+}
+
+.input:focus {
+  outline: 1px solid var(--input-main-color);
+}
+
+/* Variants */
+.filled {
+  background-color: rgb(241, 243, 245);
+}
+
+.unstyled {
+  outline: 0;
+  border: 0;
+}
+
+.unstyled:focus {
+  outline: 0;
+  border: 0;
+}
+
+.disabled {
+  background-color: rgb(241, 243, 245);
+  cursor: not-allowed;
+}
+
+.input_icon {
+  margin-right: 5px;
+}
