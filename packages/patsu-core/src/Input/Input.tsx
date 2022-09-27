@@ -29,8 +29,9 @@ export const Input = ({
   ...props
 }: InputProps) => {
   let classInput = cn(styles.input, styles[variant], {
-    [styles.disabled]: disabled
+    [styles.disabled]: disabled,
   })
+
   return (
     <span className={styles.input_wrapper}>
       {icon && <span className={styles.input_icon}>{icon}</span>}
